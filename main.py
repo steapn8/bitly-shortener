@@ -46,7 +46,9 @@ def is_bitlink(token, link):
 if __name__ == "__main__":
     load_dotenv()
     bitly_token = os.getenv('BITLY_TOKEN')
-    parser = argparse.ArgumentParser(description = 'Этот проект сокращает ссылки через сайт bitly и выводит их сокращённую рабочую версию, а также показывает количество кликов по сокращенной ссылке.')
+    parser = argparse.ArgumentParser(description = 
+    '''Этот проект сокращает ссылки через сайт bitly и выводит их сокращённую рабочую версию, 
+    а также показывает количество кликов по сокращенной ссылке.''')
     parser.add_argument('link', type=str, help='Введите ссылку')
     args = parser.parse_args()
     try:
